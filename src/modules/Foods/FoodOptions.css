@@ -1,0 +1,13 @@
+.food-options {
+  margin-left: 10px;
+  padding: 5px;
+}
+
+.food-suboption {
+  margin-left: 40px;
+  padding: 2px;
+}
+
+.theme_dark .food-options {
+  color: var(--theme_dark_text_color);
+}

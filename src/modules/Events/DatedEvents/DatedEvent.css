@@ -1,0 +1,56 @@
+.dated_event {
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 3px 7px 8px 2px rgba(0, 0, 0, 0.25);
+}
+
+.theme_dark .dated_event {
+  background-color: var(--light_box_bg_color);
+  /* color: var(--light-text-color); */
+}
+
+.dated_event h4 {
+  background: var(--box_header_color);
+  border-radius: 10px 10px 0 0;
+  /* color: var(--light-text-color); */
+  margin: 0;
+  padding: 12px;
+  text-align: center;
+}
+.dated_event h4 a {
+  color: var(--theme_dark_text_color);
+}
+
+.dated_event_body {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.dated_event_text {
+  width: 50%;
+}
+
+.dated_event_date {
+  font-weight: 600;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.dated_event_image {
+  /* margin-right: 1rem; */
+  width: 50%;
+}
+
+.dated_event_image img {
+  /* border-radius: 0px 0px 0 10px; */
+  display: block;
+  height: 100%;
+  max-width: 100%;
+  padding: 0.5rem;
+  object-fit: contain;
+
+  /* get rid of the annoying gap */
+  width: 100%;
+}

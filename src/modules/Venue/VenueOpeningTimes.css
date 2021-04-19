@@ -1,0 +1,7 @@
+.venue_opening_times {
+  padding: 0.5rem;
+  /* background-color: var(--dark_box_bg_color); */
+}
+.venue_opening_times h3 {
+  padding-bottom: 1rem;
+}

@@ -1,0 +1,37 @@
+/* mobile first small*/
+/* Medium devices (tablets, 768px and up) */
+.jobslist {
+  /* padding: 0.5rem; */
+}
+
+.jobslist a {
+  text-decoration: none;
+}
+
+.theme_dark .jobslist {
+  background-color: var(--dark-box-bg-color);
+  color: var(--theme_dark_text_color);
+}
+
+.theme_dark .jobslist a {
+  color: var(--light-text-color);
+}
+
+.theme_dark .jobslist h3 {
+  color: var(--dark-price-color);
+}
+
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .jobslist {
+    background-color: beige;
+    /* width: 75%; */
+  }
+}

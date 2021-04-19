@@ -1,0 +1,14 @@
+.food_item {
+  background: rgb(253, 255, 240);
+
+  margin-top: 25px;
+
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 7px 8px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 3px 7px 8px 2px rgba(0, 0, 0, 0.25);
+  padding-bottom: 10px;
+}
+
+.theme_dark .food_item {
+  background: var(--dark_box_bg_color);
+}

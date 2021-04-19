@@ -1,0 +1,11 @@
+.jobsListItem {
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 7px 8px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 3px 7px 8px 2px rgba(0, 0, 0, 0.25);
+  /* height: 8rem; */
+  /* margin-top: 1.5rem; */
+  /* text-align: center; */
+}
+.theme_dark .jobsListItem {
+  background-color: var(--dark_box_bg_color);
+}

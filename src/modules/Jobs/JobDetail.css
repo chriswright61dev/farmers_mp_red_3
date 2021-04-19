@@ -1,0 +1,27 @@
+/* mobile first small*/
+
+.jobsListItem {
+  padding: 0.5rem;
+}
+
+.theme_dark .jobsListItem a {
+  color: var(--theme_dark_price_color);
+  text-decoration: none;
+}
+
+.jobsListItem h3 {
+  padding-bottom: 0.5rem;
+}
+/* look at clamp min width to do typography */
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}

@@ -1,0 +1,30 @@
+/* mobile first small*/
+.header_logo img {
+  padding-top: 1rem;
+  width: 30%;
+  text-align: center;
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .header_logo img {
+    /* padding-top: 1rem; */
+    width: 20%;
+    text-align: center;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .header_logo img {
+    width: 15%;
+    text-align: center;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .header_logo img {
+    width: 15%;
+    text-align: center;
+  }
+}

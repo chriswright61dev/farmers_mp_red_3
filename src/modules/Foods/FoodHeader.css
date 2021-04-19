@@ -1,0 +1,13 @@
+.food_header {
+  background: var(--box_header_color);
+  color: var(--theme_dark_text_color);
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 7px 8px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 3px 7px 8px 2px rgba(0, 0, 0, 0.25);
+  /* margin: 10px; */
+}
+
+.food_header h3 {
+  text-align: center;
+  padding: 1rem;
+}

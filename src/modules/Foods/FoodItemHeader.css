@@ -1,0 +1,12 @@
+.food_item_header {
+  background: var(--box_header_color);
+  color: var(--theme_dark_text_color);
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px 10px 0 0;
+}
+
+.foodPrice {
+  color: var(--theme_dark_price_color);
+  margin-left: 5px;
+}

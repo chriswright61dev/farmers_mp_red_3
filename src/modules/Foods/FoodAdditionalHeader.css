@@ -1,0 +1,10 @@
+.food-additional-header {
+  font-size: 18px;
+  margin-left: 10px;
+  margin-bottom: 0.5rem;
+  padding: 5px;
+}
+
+.theme_dark .food-additional-header {
+  color: var(--theme_dark_text_color);
+}

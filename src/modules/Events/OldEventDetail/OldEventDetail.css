@@ -1,0 +1,65 @@
+/* mobile first small*/
+.old_events_details {
+  width: 100%;
+  margin: 0.5rem;
+}
+
+.theme_dark .old_events_details {
+  color: var(--light-text-color);
+  /* background-color: rgb(103, 172, 197); */
+}
+
+.old_dated_event_detail_text {
+  width: 100%;
+}
+
+.old_dated_event_detail {
+  width: 100%;
+}
+
+.old_dated_event_detail_images {
+  width: 100%;
+}
+
+.old_dated_event_detail_images img {
+  display: block;
+  height: auto;
+
+  max-width: 100%;
+  object-fit: contain;
+  /* get rid of the annoying gap */
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .old_events-details {
+    /* width: 60%;
+    margin: 2%; */
+  }
+
+  .old_dated_event_detail_text {
+    /* background-color: blue; */
+    width: 50%;
+    padding: 1rem;
+  }
+
+  .old_dated_event_detail {
+    /* background-color: yellow; */
+    display: flex;
+  }
+
+  .old_dated_event_detail_images {
+    /* background-color: green; */
+    width: 50%;
+  }
+}

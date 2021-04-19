@@ -1,0 +1,9 @@
+.dated_events a {
+  text-decoration: none;
+  color: var(--theme_dark_alert_color);
+}
+
+.dated_events a p {
+  text-decoration: none;
+  color: var(--theme_light_text_color);
+}

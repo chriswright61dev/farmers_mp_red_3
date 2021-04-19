@@ -1,0 +1,15 @@
+.drink_type_header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background: var(--box_header_color);
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  min-height: 5rem;
+
+  -webkit-box-shadow: 3px 7px 8px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 3px 7px 8px 2px rgba(0, 0, 0, 0.25);
+}

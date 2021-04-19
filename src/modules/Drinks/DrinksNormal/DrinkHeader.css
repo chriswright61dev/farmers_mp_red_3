@@ -1,0 +1,28 @@
+.drink_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  padding: 0.2rem 1rem 0.2rem 1rem;
+  border-radius: 10px;
+}
+.theme_light .drink_header {
+  background-color: rgb(105, 170, 195);
+}
+
+.theme_dark .drink_header {
+  color: var(--theme_dark_text_color);
+}
+
+.theme_dark .drink__price__container {
+  color: var(--theme_dark_text_color);
+}
+
+.drink_header p {
+  margin: 0;
+  padding: 0;
+}
+
+.drink_header_name {
+  font-weight: 700;
+}

@@ -1,0 +1,9 @@
+.food__additional_body {
+  font-size: 18px;
+  margin-left: 40px;
+  padding: 2px;
+}
+
+.theme_dark .food__additional_body {
+  color: var(--theme_dark_text_color);
+}

@@ -1,0 +1,32 @@
+.OldEventLinkBlock {
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 3px 7px 8px 2px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+a .OldEventLinkBlock h3 {
+  color: var(--theme_dark_alert_color);
+}
+
+.OldEventLinkBlock h3 {
+  background: var(--box_header_color);
+  border-radius: 10px 10px 0 0;
+  /* color: var(--light-text-color); */
+  margin: 0;
+  padding: 12px;
+  text-align: center;
+}
+
+.OldEventLinkBlock img {
+  /* border-radius: 0px 0px 0 10px; */
+  display: block;
+  height: 100%;
+  max-width: 100%;
+  padding: 0.5rem;
+  object-fit: contain;
+
+  /* get rid of the annoying gap */
+  width: 100%;
+}

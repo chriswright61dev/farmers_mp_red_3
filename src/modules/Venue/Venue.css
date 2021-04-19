@@ -1,0 +1,34 @@
+/* .venue{
+  background-color: ;
+} */
+
+/* mobile first small*/
+.venue-info {
+  margin: 0.5rem;
+}
+
+.venue img {
+  width: 100%;
+  height: auto;
+}
+
+/* .theme_dark .venue-info {
+    color: var(--light-text-color);
+  } */
+
+.venue h1 {
+  padding-bottom: 1rem;
+}
+/* mobile first small*/
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}

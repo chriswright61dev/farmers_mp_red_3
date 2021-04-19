@@ -1,0 +1,43 @@
+:root {
+  --theme_light_text_color: rgb(15, 15, 15);
+  --theme_dark_text_color: rgb(215, 215, 215);
+
+  --theme_light_bg_color: rgb(115, 190, 220);
+  --theme_dark_bg_color: rgb(5, 35, 45);
+
+  --theme_light_price_color: rgb(145, 20, 19);
+  --theme_dark_price_color: rgb(210, 210, 10);
+
+  --theme_light_alert_color: rgb(195, 0, 0);
+  --theme_dark_alert_color: rgb(240, 240, 45);
+
+  --theme_light_alert_bg_color: rgb(230, 245, 85);
+  --theme_dark_alert_bg_color: rgb(195, 0, 0);
+
+  --dark_box_bg_color: rgb(55, 55, 50);
+  --mid_box_bg_color: rgb(225, 225, 225);
+  --box_header_color: rgb(135, 20, 10);
+
+  --light_box_bg_color: rgb(240, 240, 220);
+}
+.alert {
+  color: var(--alert-color);
+}
+
+.theme_light {
+  color: var(--theme_light_text_color);
+  background-color: var(--theme_light_bg_color);
+}
+
+.theme_dark {
+  color: var(--theme_dark_text_color);
+  background-color: var(--theme_dark_bg_color);
+}
+
+/* .info_column {
+  background: rgb(95, 85, 84);
+}
+
+.detail_column {
+  background: rgb(94, 102, 89);
+} */
