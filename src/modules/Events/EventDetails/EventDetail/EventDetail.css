@@ -22,13 +22,6 @@
 }
 
 .dated_event_detail_images img {
-  display: block;
-  height: auto;
-
-  max-width: 100%;
-  object-fit: contain;
-  /* get rid of the annoying gap */
-  width: 100%;
   margin-bottom: 1rem;
 }
 

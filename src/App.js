@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Events from "./pages/Events";
 import Event from "./pages/Event";
+import RegularEvent from "./pages/RegularEvent";
 // import PastEvents from "./pages/PastEvents";
 // import PastEvent from "./pages/PastEvent";
 import Drinks from "./pages/Drinks";
@@ -33,6 +34,10 @@ function App() {
 
           <Route path="/events/:event_id">
             <Event />
+          </Route>
+
+          <Route path="/regularevents/:event_id">
+            <RegularEvent />
           </Route>
 
           {/* <Route path="/pastevents" exact>

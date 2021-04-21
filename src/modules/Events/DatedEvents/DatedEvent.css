@@ -44,13 +44,13 @@
 }
 
 .dated_event_image img {
-  /* border-radius: 0px 0px 0 10px; */
+  /* border-radius: 0px 0px 0 10px;
   display: block;
   height: 100%;
-  max-width: 100%;
+  max-width: 100%; */
   padding: 0.5rem;
-  object-fit: contain;
+  /* object-fit: contain;
 
-  /* get rid of the annoying gap */
-  width: 100%;
+  get rid of the annoying gap
+  width: 100%; */
 }

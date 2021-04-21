@@ -10,7 +10,6 @@ function DatedEvents() {
   } else {
     return (
       <div className="dated_events">
-        <p>dated events</p>
         {es.map((anEvent) => {
           return (
             <DatedEvent

@@ -9,7 +9,6 @@ function PosterEvents() {
   } else {
     return (
       <div className="poster-events">
-        <p>poster events</p>
         {pes.map((anEvent) => {
           return (
             <PosterEvent

@@ -2,10 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./DatedEvent.css";
 import { DateFormat } from "../../../utilities/utilities";
-
+import ImageContainer from "../../../components/ImageContainer/ImageContainer";
 function DatedEvent(props) {
-  // console.log("DatedEvent props", props);
-
   const theDateData = DateFormat(props.date);
 
   return (
@@ -14,7 +12,7 @@ function DatedEvent(props) {
         <h4>{props.name}</h4>
         <div className="dated_event_body">
           <div className="dated_event_image">
-            <img src={props.imageURL} alt={props.name} />
+            <ImageContainer source={props.imageURL} altText={props.name} />
           </div>
 
           <div className="dated_event_text">

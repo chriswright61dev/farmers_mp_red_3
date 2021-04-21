@@ -1,9 +1,10 @@
 import React from "react";
+import ImageContainer from "../../../components/ImageContainer/ImageContainer";
 import "./PosterEvent.css";
 function PosterEvent(props) {
   return (
     <div className="poster-event">
-      <img src={props.imageURL} alt={props.name} />
+      <ImageContainer source={props.imageURL} altText={props.name} />
     </div>
   );
 }

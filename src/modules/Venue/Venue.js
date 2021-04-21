@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import "./Venue.css";
+import ImageContainer from "../../components/ImageContainer/ImageContainer";
 import { MainDataContext } from "../../data/MainDataContext";
 function Venue() {
   const allData = useContext(MainDataContext);
@@ -10,7 +11,10 @@ function Venue() {
   } else {
     return (
       <div className="venue">
-        <img src={vs.venue_image_large_480} alt={vs.venue_name} />
+        <ImageContainer
+          source={vs.venue_image_large_480}
+          altText={vs.venue_name}
+        />
         <div className="venue-info">
           <h1>{vs.venue_name}</h1>
           <p> {vs.venue_address_1}</p>

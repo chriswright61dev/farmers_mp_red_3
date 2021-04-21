@@ -1,19 +1,20 @@
 import React from "react";
-import "./EventDetail.css";
-import { DateFormat } from "../../../../utilities/utilities";
+import "./RegularEventDetail.css";
 import ImageContainer from "../../../../components/ImageContainer/ImageContainer";
-function EventDetail(props) {
-  const es = props.data;
 
+function RegularEventDetail(props) {
+  const es = props.data;
+  console.log("es", es);
   if (es) {
-    const theDateData = DateFormat(es.event_date_long);
     return (
-      <div className="dated_event_detail">
-        <div className="dated_event_detail_text">
-          <h3>
-            {theDateData.dayofweek} {theDateData.daysuffix} {theDateData.month}{" "}
-            at {theDateData.ampm}
-          </h3>
+      <div className="regular_event_detail">
+        <div className="regular_event_detail_text">
+          <h3>{es.title}</h3>
+          <h4>
+            Every {es.event_regular_day} at {es.event_regular_time}
+          </h4>
+          <p>{es.event_description}</p>
+
           <div
             className="event_body"
             dangerouslySetInnerHTML={{ __html: es.event_body }}
@@ -30,4 +31,4 @@ function EventDetail(props) {
   } else return null;
 }
 
-export default EventDetail;
+export default RegularEventDetail;

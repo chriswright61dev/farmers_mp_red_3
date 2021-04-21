@@ -10,7 +10,6 @@ function RegularEvents() {
   } else {
     return (
       <div className="regular_events">
-        <p>regular events</p>
         {es.map((anEvent) => {
           return (
             <RegularEvent
