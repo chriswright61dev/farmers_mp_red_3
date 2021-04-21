@@ -14,6 +14,7 @@ function RegularEventDetail(props) {
             Every {es.event_regular_day} at {es.event_regular_time}
           </h4>
           <p>{es.event_description}</p>
+          <p>Admission: {es.event_admission}</p>
 
           <div
             className="event_body"

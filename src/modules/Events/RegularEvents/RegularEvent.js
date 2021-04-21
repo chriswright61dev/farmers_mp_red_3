@@ -17,10 +17,10 @@ function RegularEvent(props) {
             <p className="regular_event_description">{props.description} </p>
             <p className="regular_event_day">{props.day} </p>
             <p className="regular_event_time">{props.time} </p>
+            <p className="regular_event_admission">{props.admission} </p>
           </div>
         </div>
       </div>
-      //{" "}
     </Link>
   );
 }

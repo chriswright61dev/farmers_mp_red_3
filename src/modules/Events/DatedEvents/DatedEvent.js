@@ -5,7 +5,7 @@ import { DateFormat } from "../../../utilities/utilities";
 import ImageContainer from "../../../components/ImageContainer/ImageContainer";
 function DatedEvent(props) {
   const theDateData = DateFormat(props.date);
-
+  console.log("props", props);
   return (
     <Link to={`/events/${props.id}`}>
       <div className="dated_event">
@@ -22,6 +22,7 @@ function DatedEvent(props) {
               {theDateData.month} {theDateData.ampm}
             </p>
             <p className="dated_event_description">{props.description} </p>
+            <p className="dated_event_admission">{props.admission} </p>
           </div>
         </div>
       </div>

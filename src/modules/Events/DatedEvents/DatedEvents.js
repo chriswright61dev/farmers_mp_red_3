@@ -18,6 +18,7 @@ function DatedEvents() {
               name={anEvent.event_name}
               date={anEvent.event_date_long}
               description={anEvent.event_description}
+              admission={anEvent.event_admission}
               imageURL={anEvent.event_poster_220_medium}
             />
           );

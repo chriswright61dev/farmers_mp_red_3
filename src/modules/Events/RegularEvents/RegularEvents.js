@@ -20,6 +20,7 @@ function RegularEvents() {
               description={anEvent.event_description}
               day={anEvent.event_regular_day}
               time={anEvent.event_regular_time}
+              admission={anEvent.event_admission}
             />
           );
         })}
