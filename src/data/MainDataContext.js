@@ -23,16 +23,15 @@ function MainDataContextProvider(props) {
     drinks: "http://levenshulmelife.com/drupal9/api_drinks_farmers",
     events: "http://levenshulmelife.com/drupal9/api_events_farmers",
     regularEvents:
-      "http://levenshulmelife.com/drupal9/api_regular_events_farmers",
+      "http://levenshulmelife.com/drupal9/api_events_regular_farmers",
     posterEvents:
-      "http://levenshulmelife.com/drupal9/api_poster_events_farmers",
+      "http://levenshulmelife.com/drupal9/api_events_poster-farmers",
     otherVenueEvents:
       "http://levenshulmelife.com/drupal9/api_events_other_venue_farmers",
+    oldEvents: "http://levenshulmelife.com/drupal9/api_events_old_farmers",
     foods: "http://levenshulmelife.com/drupal9/api_food_farmers",
     jobs: "http://levenshulmelife.com/drupal9/api_jobs_farmers",
   };
-
-  //   oldEvents: "http://levenshulmelife.com/drupal9/api_events_old_farmers",
 
   function feedCounter(feedList) {
     const feedcount = countProperties(feedList);
@@ -204,7 +203,7 @@ function MainDataContextProvider(props) {
     regularEventsData: [],
     posterEventsData: [],
     otherVenueEventsData: [],
-    // oldEventsData: [],
+    oldEventsData: [],
     drinksData: [],
     foodsData: [],
     jobsData: [],
@@ -228,9 +227,9 @@ function MainDataContextProvider(props) {
     fetchData("events");
   }, []);
 
-  //   useEffect(() => {
-  //     fetchData("oldEvents");
-  //   }, []);
+  useEffect(() => {
+    fetchData("oldEvents");
+  }, []);
 
   useEffect(() => {
     fetchData("otherVenueEvents");

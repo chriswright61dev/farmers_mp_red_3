@@ -1,5 +1,5 @@
 .loading {
-  background: rgb(65, 81, 231);
+  background: rgba(65, 81, 231, 0.5);
   text-align: center;
   display: flex;
   flex-direction: column;

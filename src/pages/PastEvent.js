@@ -3,25 +3,25 @@ import { MainDataContext } from "../data/MainDataContext";
 import Loading from "../components/Loading/Loading";
 import Venue from "../modules/Venue/Venue";
 import OldEvents from "../modules/Events/OldEvents/OldEvents";
+import OldEventDetails from "../modules/Events/OldEventDetails/OldEventDetails";
+function PastEvent() {
+  const feedsCount = useContext(MainDataContext).mainState.feedsCount;
+  const loadCount = useContext(MainDataContext).mainState.loadCount;
 
-function PastEvents() {
-  const feedCount = useContext(MainDataContext).mainState.feedsCount;
-  const allLoaded = useContext(MainDataContext).mainState.loadCount;
-
-  if (allLoaded !== feedCount) {
+  if (feedsCount !== loadCount) {
     return <Loading />;
   } else {
     return (
       <div className="theme_dark">
         <div className="container">
+          <div className="detail_column">
+            'this is where the details are'
+            <OldEventDetails />
+          </div>
           <div className="info_column">
-            'This should be a list of old events'
+            a list of old events
             <OldEvents />
           </div>
-          <div className="info_column">' stuff'</div>
-
-          <div className="info_column">' stuff'</div>
-
           <div className="info_column">
             <Venue />
           </div>
@@ -31,4 +31,4 @@ function PastEvents() {
   }
 }
 
-export default PastEvents;
+export default PastEvent;

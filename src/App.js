@@ -10,11 +10,11 @@ import Home from "./pages/Home";
 import Events from "./pages/Events";
 import Event from "./pages/Event";
 import RegularEvent from "./pages/RegularEvent";
-// import PastEvents from "./pages/PastEvents";
-// import PastEvent from "./pages/PastEvent";
+import PastEvents from "./pages/PastEvents";
+import PastEvent from "./pages/PastEvent";
 import Drinks from "./pages/Drinks";
-// import Jobs from "./pages/Jobs";
-// import Job from "./pages/Job";
+import Jobs from "./pages/Jobs";
+import Job from "./pages/Job";
 import Header from "./modules/Header/Header";
 import Footer from "./modules/Footer/Footer";
 
@@ -40,25 +40,25 @@ function App() {
             <RegularEvent />
           </Route>
 
-          {/* <Route path="/pastevents" exact>
+          <Route path="/pastevents" exact>
             <PastEvents />
-          </Route> */}
+          </Route>
 
-          {/* <Route path="/pastevents/:past_event_id">
+          <Route path="/pastevent/:event_id">
             <PastEvent />
-          </Route> */}
+          </Route>
 
           <Route path="/drinks">
             <Drinks />
           </Route>
 
-          {/* <Route path="/jobs" exact>
+          <Route path="/jobs" exact>
             <Jobs />
-          </Route> */}
+          </Route>
 
-          {/* <Route path="/jobs/:job_id">
+          <Route path="/jobs/:job_id">
             <Job />
-          </Route> */}
+          </Route>
         </Switch>
         <Footer />
       </Router>

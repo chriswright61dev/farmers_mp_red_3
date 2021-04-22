@@ -5,7 +5,8 @@ import Venue from "../modules/Venue/Venue";
 import PosterEvents from "../modules/Events/PosterEvents/PosterEvents";
 import DatedEvents from "../modules/Events/DatedEvents/DatedEvents";
 import RegularEvents from "../modules/Events/RegularEvents/RegularEvents";
-
+import OtherVenueEvents from "../modules/Events/OtherVenueEvents/OtherVenueEvents";
+import OldEventsHere from "../modules/Events/OldEvents/OldEventsHere";
 function Events() {
   const feedCount = useContext(MainDataContext).mainState.feedsCount;
   const allLoaded = useContext(MainDataContext).mainState.loadCount;
@@ -21,9 +22,11 @@ function Events() {
           </div>
           <div className="info_column">
             <DatedEvents />
+            <RegularEvents />
           </div>
           <div className="info_column">
-            <RegularEvents />
+            <OldEventsHere />
+            <OtherVenueEvents />
           </div>
 
           <div className="info_column">
