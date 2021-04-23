@@ -15,11 +15,9 @@ function PastEvent() {
       <div className="theme_dark">
         <div className="container">
           <div className="detail_column">
-            'this is where the details are'
             <OldEventDetails />
           </div>
           <div className="info_column">
-            a list of old events
             <OldEvents />
           </div>
           <div className="info_column">

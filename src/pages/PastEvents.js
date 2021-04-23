@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import "./PastEvents.css";
 import { MainDataContext } from "../data/MainDataContext";
 import Loading from "../components/Loading/Loading";
 import Venue from "../modules/Venue/Venue";
@@ -14,14 +15,10 @@ function PastEvents() {
     return (
       <div className="theme_dark">
         <div className="container">
-          <div className="info_column">
-            'This should be a list of old events'
+          <h3>These event have passed and are for reference only</h3>
+          <div className="flexy_column">
             <OldEvents />
           </div>
-          <div className="info_column">' stuff'</div>
-
-          <div className="info_column">' stuff'</div>
-
           <div className="info_column">
             <Venue />
           </div>

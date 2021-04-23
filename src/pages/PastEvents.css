@@ -1,0 +1,6 @@
+.flexy_column {
+  background-color: yellowgreen;
+  width: 75%;
+  /* display: flex; */
+  /* just fill up the space */
+}

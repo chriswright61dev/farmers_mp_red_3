@@ -14,18 +14,20 @@ function OldEventDetail(props) {
             This is an old Event that took place in {theDateData.month}{" "}
             {theDateData.year}
           </h2>
+          <h2> {es.title}</h2>
+          <h2>{es.event_name}</h2>
 
           <div
             className="event_body"
             dangerouslySetInnerHTML={{ __html: es.event_body }}
           />
-        </div>
 
-        <h3>
-          {theDateData.dayofweek} {theDateData.daysuffix} {theDateData.month} at{" "}
-          {theDateData.ampm}
-        </h3>
-        <p>Admission was: {es.event_admission}</p>
+          <h3>
+            {theDateData.dayofweek} {theDateData.daysuffix} {theDateData.month}{" "}
+            at {theDateData.ampm}
+          </h3>
+          <p>Admission was: {es.event_admission}</p>
+        </div>
 
         <div className="dated_event_detail_images">
           <ImageContainer source={es.event_poster_original} altText={es.name} />

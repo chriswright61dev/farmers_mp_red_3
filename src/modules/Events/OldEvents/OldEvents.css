@@ -1,3 +1,8 @@
+.old_dated_events {
+  background: cyan;
+  display: flex;
+}
+
 .old_dated_events a {
   text-decoration: none;
   color: var(--theme_dark_alert_color);

@@ -11,7 +11,7 @@ function OldEvent(props) {
     <Link to={`/pastevent/${props.id}`}>
       <div className="old_dated_event">
         <h4>{props.name}</h4>
-        <h5>This event has passed. This is for reference only</h5>
+
         <div className="old_dated_event_body">
           <div className="old_dated_event_image">
             <img src={props.imageURL} alt={props.name} />
