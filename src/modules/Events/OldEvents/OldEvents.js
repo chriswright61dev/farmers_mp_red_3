@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import { MainDataContext } from "../../../data/MainDataContext";
-import OldEvent from "./OldEvent";
+import EventCard from "../../../components/EventCard/EventCard";
 import "./OldEvents.css";
 function OldEvents() {
   const es = useContext(MainDataContext).mainState.oldEventsData;
-
+  console.log("es", es);
   if (es.length === 0) {
     return null;
   } else {
@@ -12,13 +12,15 @@ function OldEvents() {
       <div className="old_dated_events">
         {es.map((anOldEvent) => {
           return (
-            <OldEvent
+            <EventCard
               key={anOldEvent.id}
+              link="events"
               id={anOldEvent.id}
-              name={anOldEvent.event_name}
               date={anOldEvent.event_date_long}
-              description={anOldEvent.event_description}
+              name={anOldEvent.event_name}
               imageURL={anOldEvent.event_poster_220_medium}
+              description={anOldEvent.description}
+              admission={anOldEvent.event_admission}
             />
           );
         })}

@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { MainDataContext } from "../../../data/MainDataContext";
-import RegularEvent from "./RegularEvent";
-
+import EventCard from "../../../components/EventCard/EventCard";
 function RegularEvents() {
   const es = useContext(MainDataContext).mainState.regularEventsData;
 
@@ -12,7 +11,8 @@ function RegularEvents() {
       <div className="regular_events">
         {es.map((anEvent) => {
           return (
-            <RegularEvent
+            <EventCard
+              link={"regularevents"}
               key={anEvent.id}
               id={anEvent.id}
               name={anEvent.event_name}

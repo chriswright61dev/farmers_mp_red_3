@@ -16,7 +16,7 @@ function Event() {
       <div className="theme_dark">
         <div className="container">
           <div className="detail_column">
-            <EventDetails />
+            <EventDetails currentVenue="Farmers Arms" />
           </div>
           <div className="info_column">
             <DatedEvents />

@@ -1,5 +1,7 @@
+// no longr needed
+
 import React, { useContext } from "react";
-import "./PastEvents.css";
+// import "./PastEvents.css";
 import { MainDataContext } from "../data/MainDataContext";
 import Loading from "../components/Loading/Loading";
 import Venue from "../modules/Venue/Venue";
@@ -15,8 +17,8 @@ function PastEvents() {
     return (
       <div className="theme_dark">
         <div className="container">
-          <h3>These event have passed and are for reference only</h3>
           <div className="flexy_column">
+            <h3>These event have passed and are for reference only</h3>
             <OldEvents />
           </div>
           <div className="info_column">

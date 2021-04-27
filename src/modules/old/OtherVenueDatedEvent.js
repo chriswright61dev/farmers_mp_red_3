@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./OtherVenueDatedEvent.css";
-import { DateFormat } from "../../../utilities/utilities";
+import { DateFormat } from "../../utilities/utilities";
 
 function OtherVenueDatedEvent(props) {
   // console.log("DatedEvent props", props);

@@ -5,15 +5,18 @@ function VenueMap() {
   const allData = useContext(MainDataContext);
   const vs = allData.mainState.venueData;
 
-  //   const vs = useContext(VenueContext).venueState.theVenueData;
+  // venue_map_src the old way
 
   if (vs.length === 0) {
     return null;
   } else {
-    const pb = vs.map_pb;
-    const mapsrc = "https://www.google.com/maps/embed?pb=" + pb;
+    let mapsrc = vs.venue_map_src;
 
-    // src={vs.venue_map_src}
+    if (vs.map_pb) {
+      const pb = vs.map_pb;
+      mapsrc = "https://www.google.com/maps/embed?pb=" + pb;
+    }
+
     return (
       <div className="venue_map">
         <iframe
@@ -21,7 +24,7 @@ function VenueMap() {
           width="100%"
           height="400"
           loading="lazy"
-          title="Freds Ale House"
+          title={vs.mapTitle}
         ></iframe>
       </div>
     );

@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import EventDetail from "./EventDetail/EventDetail";
-function EventDetails() {
+function EventDetails(props) {
   let { event_id } = useParams();
-  let baseUrl =
-    "http://levenshulmelife.com/drupal9/api_event_farmers/?event_id=";
+  let baseUrl = "http://levenshulmelife.com/drupal9/api_event/?event_id=";
 
   const [eventState, setEventState] = useState({
-    loading: false,
+    // loading: false,
     eventData: [],
     used_event_id: [],
     currentEventData: [],
@@ -66,9 +65,21 @@ function EventDetails() {
   }, [event_id]);
   //rerun useEffect if new event id is selected
 
-  let eventData = eventState.currentEventData;
+  let eventData = eventState.currentEventData[0];
   if (eventData) {
-    return <EventDetail data={eventData[0]} />;
+    let HasEventPassed = false;
+    const now = new Date();
+    if (Date.parse(now) > Date.parse(eventData.event_date)) {
+      HasEventPassed = true;
+    }
+
+    return (
+      <EventDetail
+        currentVenue={props.currentVenue}
+        data={eventData}
+        oldevent={HasEventPassed}
+      />
+    );
   } else {
     return "loading";
   }

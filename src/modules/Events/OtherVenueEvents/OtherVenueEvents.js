@@ -1,10 +1,8 @@
 import React, { useContext } from "react";
 import { MainDataContext } from "../../../data/MainDataContext";
-import OtherVenueDatedEvent from "./OtherVenueDatedEvent";
-// import "./DatedEvents.css";
+import EventCard from "../../../components/EventCard/EventCard";
 function OtherVenueEvents() {
   const es = useContext(MainDataContext).mainState.otherVenueEventsData;
-  //   otherVenueEventsData
   if (es.length === 0) {
     return null;
   } else {
@@ -13,7 +11,8 @@ function OtherVenueEvents() {
         other venues
         {es.map((anEvent) => {
           return (
-            <OtherVenueDatedEvent
+            <EventCard
+              link="events"
               key={anEvent.id}
               id={anEvent.id}
               venue={anEvent.event_venue}

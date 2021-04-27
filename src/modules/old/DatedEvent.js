@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./DatedEvent.css";
-import { DateFormat } from "../../../utilities/utilities";
-import ImageContainer from "../../../components/ImageContainer/ImageContainer";
+import { DateFormat } from "../../utilities/utilities";
+import ImageContainer from "../../components/ImageContainer/ImageContainer";
 function DatedEvent(props) {
   const theDateData = DateFormat(props.date);
-  console.log("props", props);
+  // console.log("props", props);
   return (
     <Link to={`/events/${props.id}`}>
       <div className="dated_event">

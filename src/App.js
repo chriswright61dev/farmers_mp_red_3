@@ -11,7 +11,9 @@ import Events from "./pages/Events";
 import Event from "./pages/Event";
 import RegularEvent from "./pages/RegularEvent";
 import PastEvents from "./pages/PastEvents";
-import PastEvent from "./pages/PastEvent";
+// import PastEvent from "./pages/PastEvent";
+// import OtherVenueDatedEvent from "./pages/OtherVenueDatedEvent";
+
 import Drinks from "./pages/Drinks";
 import Jobs from "./pages/Jobs";
 import Job from "./pages/Job";
@@ -40,13 +42,17 @@ function App() {
             <RegularEvent />
           </Route>
 
+          {/* <Route path="/othervenueevent/:event_id">
+            <OtherVenueDatedEvent />
+          </Route> */}
+
           <Route path="/pastevents" exact>
             <PastEvents />
           </Route>
 
-          <Route path="/pastevent/:event_id">
+          {/* <Route path="/pastevent/:event_id">
             <PastEvent />
-          </Route>
+          </Route> */}
 
           <Route path="/drinks">
             <Drinks />

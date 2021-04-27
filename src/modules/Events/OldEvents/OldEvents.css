@@ -1,6 +1,8 @@
 .old_dated_events {
-  background: cyan;
+  /* background: cyan; */
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .old_dated_events a {

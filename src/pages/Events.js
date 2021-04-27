@@ -25,8 +25,8 @@ function Events() {
             <RegularEvents />
           </div>
           <div className="info_column">
-            <OldEventsHere />
             <OtherVenueEvents />
+            <OldEventsHere />
           </div>
 
           <div className="info_column">

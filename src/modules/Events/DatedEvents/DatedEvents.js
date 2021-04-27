@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { MainDataContext } from "../../../data/MainDataContext";
-import DatedEvent from "./DatedEvent";
+import EventCard from "../../../components/EventCard/EventCard";
+
 import "./DatedEvents.css";
 function DatedEvents() {
   const es = useContext(MainDataContext).mainState.eventsData;
@@ -12,7 +13,8 @@ function DatedEvents() {
       <div className="dated_events">
         {es.map((anEvent) => {
           return (
-            <DatedEvent
+            <EventCard
+              link="events"
               key={anEvent.id}
               id={anEvent.id}
               name={anEvent.event_name}

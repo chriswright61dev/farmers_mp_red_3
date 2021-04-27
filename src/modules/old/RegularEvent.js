@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import ImageContainer from "../../../components/ImageContainer/ImageContainer";
+import ImageContainer from "../../components/ImageContainer/ImageContainer";
 import "./RegularEvent.css";
 function RegularEvent(props) {
   return (
