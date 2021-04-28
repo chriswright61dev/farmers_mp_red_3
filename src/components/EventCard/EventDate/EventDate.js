@@ -1,13 +1,14 @@
 import React from "react";
 import { DateFormat } from "../../../utilities/utilities";
+import "./EventDate.css";
 function EventDate(props) {
   const theDateData = DateFormat(props.date);
 
   return (
-    <p className="event_card_date">
+    <h5 className="event_card_date">
       {theDateData.dayofweek} {theDateData.daysuffix} {theDateData.month} at{" "}
       {theDateData.ampm}
-    </p>
+    </h5>
   );
 }
 

@@ -1,4 +1,9 @@
 /* mobile first small*/
+
+.venue_name {
+  color: yellowgreen;
+}
+
 .events-details {
   width: 100%;
   margin: 0.5rem;

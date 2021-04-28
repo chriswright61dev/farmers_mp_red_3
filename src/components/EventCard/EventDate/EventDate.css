@@ -1,0 +1,12 @@
+.event_card_date {
+  background-color: #bdbd9a;
+  color: rgb(22, 22, 22);
+  padding: 0.5rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  border-radius: 10px;
+}
+
+.event_card_date a p {
+  color: aliceblue;
+}
